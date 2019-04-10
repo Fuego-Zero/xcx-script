@@ -1,0 +1,45 @@
+{
+  "name": "shop_xcx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "dev": "SET NODE_ENV=dev&& node ./script/index",
+    "build": "SET NODE_ENV=prod&& node ./script/index",
+    "clean": "node ./script/clean"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.5.0",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-runtime": "^6.26.0",
+    "chalk": "^2.4.2",
+    "chokidar": "^2.1.5",
+    "colors": "^1.3.3",
+    "csso": "^3.5.1",
+    "dateformat": "^3.0.3",
+    "del": "^4.0.0",
+    "imagemin": "^6.1.0",
+    "imagemin-jpegtran": "^6.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^7.0.0",
+    "imagemin-pngquant-gfw": "^0.2.0",
+    "jsonminify": "^0.4.1",
+    "less": "^3.9.0",
+    "map-stream": "^0.0.7",
+    "node-sass": "^4.11.0",
+    "postcss": "^7.0.14",
+    "vinyl-fs": "^3.0.3"
+  },
+  "author": "",
+  "license": "ISC"
+}
