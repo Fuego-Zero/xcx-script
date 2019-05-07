@@ -1,3 +1,4 @@
+const path = require('path')
 const conf = require('../base.conf')
 const image = require('./image')
 const css = require('./css')
@@ -18,6 +19,8 @@ async function compileFile (file, cb) {
       break
 
     case 'js':
+      if (path.basename(file.path).endsWith('.filter.js')) break
+
       file.contents = await js(file)
       break
 
@@ -32,6 +35,7 @@ async function compileFile (file, cb) {
       file.contents = await json(file)
       break
 
+    case 'swan':
     case 'wxml':
       file.contents = await html(file)
       break

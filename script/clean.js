@@ -1,4 +1,2 @@
-// eslint-disable-next-line
-console.log('\033[2J')
-require('./operation/clean')()  
-
+console.clear()
+require('./operation/clean')()

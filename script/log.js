@@ -1,10 +1,11 @@
 const chalk = require('chalk')
 const dateFormat = require('dateformat')
+
 function getTime () {
   return dateFormat(new Date(), 'HH:MM:ss')
 }
 
-const log = {
+module.exports = {
   info: (...text) => {
     console.log(chalk.gray(`[${getTime()}][信息]`), ...text)
   },
@@ -25,7 +26,15 @@ const log = {
   },
   dist: (...text) => {
     console.log(chalk.blue(`[${getTime()}][写入]`), ...text)
+  },
+  process: {
+    write (text) {
+      this.clean()
+      process.stdout.write(chalk.cyan(`[${getTime()}][进度] `) + text)
+    },
+    clean () {
+      process.stdout.clearLine(0)
+      process.stdout.cursorTo(0)
+    }
   }
 }
-
-module.exports = log

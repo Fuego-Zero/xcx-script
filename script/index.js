@@ -6,8 +6,8 @@ const watchProject = require('./operation/watch-project')
 const NODE_ENV = process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 
 async function run () {
-  console.log('\033[2J');
-  
+  console.clear()
+
   try {
     if (NODE_ENV === 'prod') await clean()
     await compileMain()

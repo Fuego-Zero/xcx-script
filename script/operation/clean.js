@@ -1,9 +1,9 @@
 const del = require('del')
 
-const conf = require('../base.conf')
+const baseConf = require('../base.conf')
 const log = require('../log')
 
-function clean () {
+function clean (conf = baseConf) {
   return new Promise((resolve, reject) => {
     log.info('开始清理目录。')
 
