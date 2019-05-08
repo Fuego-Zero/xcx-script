@@ -1,15 +1,21 @@
 {
-  "name": "shop_xcx",
+  "name": "xcx-script",
   "version": "1.0.0",
   "description": "",
   "main": "",
   "directories": {
     "lib": "lib"
   },
+  "author": "Fuego",
   "scripts": {
     "dev": "SET NODE_ENV=dev&& node ./script/index",
     "build": "SET NODE_ENV=prod&& node ./script/index",
-    "clean": "node ./script/clean"
+    "clean": "node ./script/clean",
+    "wtb": "node ./script/wtb",
+    "script.dev": "nodemon -w ./script ./script/index.js",
+    "script.wtd.dev": "nodemon -w ./script ./script/wtd.js",
+    "bd.parse1": "wx2swan E:/work/shopXCX-xcx-dev/src E:/work/shopXCX-xcx-bd-dev/parse-src/2019-5-7",
+    "bd.parse2": "standard E:/work/shopXCX-xcx-bd-dev/parse-src/new2019-5-7/**/**/*.js --fix"
   },
   "dependencies": {},
   "devDependencies": {
@@ -40,6 +46,5 @@
     "postcss": "^7.0.14",
     "vinyl-fs": "^3.0.3"
   },
-  "author": "",
   "license": "ISC"
 }
