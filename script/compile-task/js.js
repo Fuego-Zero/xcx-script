@@ -4,7 +4,7 @@ const fs = require('fs')
 
 const log = require('../log')
 const baseConf = require('../base.conf')
-const notCompile = baseConf.notCompile
+// const notCompile = baseConf.notCompile
 const outputDir = baseConf.outputDir
 
 /**
@@ -54,12 +54,17 @@ module.exports = async (file) => {
     let filePath = file.path
     let fileRelative = file.relative
 
-    let opt = !notCompile.js.includes(path.basename(filePath))
-      ? {
-        minified: true,
-        comments: false
-      }
-      : {}
+    // let opt = !notCompile.js.includes(path.basename(filePath))
+    //   ? {
+    //     minified: true,
+    //     comments: false
+    //   }
+    //   : {}
+
+    let opt = {
+      minified: true,
+      comments: false
+    }
 
     if (NODE_ENV === 'dev') opt.sourceMap = true
 

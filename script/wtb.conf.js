@@ -6,6 +6,6 @@ module.exports = {
     '!pages/design/**/**',
     '!pages/index/**/**'
   ],
-  inputDir: 'parse-src/2019-5-5',
-  outputDir: 'parse-src/new2019-5-5'
+  inputDir: 'parse-src/2019-5-7',
+  outputDir: 'parse-src/new2019-5-7'
 }
