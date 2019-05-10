@@ -46,5 +46,8 @@
     "postcss": "^7.0.16",
     "vinyl-fs": "^3.0.3"
   },
-  "license": "ISC"
+  "license": "ISC",
+  "engines": {
+    "node": ">=10.15.3"
+  }
 }

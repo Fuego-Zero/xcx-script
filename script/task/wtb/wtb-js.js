@@ -27,8 +27,8 @@ module.exports = async (file) => {
       let word = /Component\(([\s\S]*)\)/gm.exec(contents)
       let options = evil(word[1])
 
-      if (options.ready && options.pageLifetimes.show) mode = 1
-      if (!options.ready && options.pageLifetimes.show) mode = 2
+      if (options.ready && options.pageLifetimes && options.pageLifetimes.show) mode = 1
+      if (!options.ready && options.pageLifetimes && options.pageLifetimes.show) mode = 2
 
       if (mode) {
         let ast = babylon.parse(contents, {
@@ -71,6 +71,3 @@ module.exports = async (file) => {
     log.error(error)
   }
 }
-
-console.log(/(?=.*[0-9])^/.test('f12f3'))
-console.log(/.hello/.test('hello'))
