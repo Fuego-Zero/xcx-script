@@ -4,10 +4,10 @@ let TransformStream = require('stream').Transform
 let log = require('../log')
 
 let baseConf = require('../base.conf')
-let compileFile = require('../compile-task/compile-file')
+let compileFile = require('../task/compile-file')
 
 let wtdConf = require('../wtb.conf')
-let wtdCompileFile = require('../compile-task/wtb/wtb-compile-file')
+let wtdCompileFile = require('../task/wtb/wtb-compile-file')
 
 let totalFileNumber = 0
 let current = 0

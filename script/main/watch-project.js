@@ -6,7 +6,7 @@ const fs = require('fs')
 
 const conf = require('../base.conf')
 const log = require('../log')
-const compileFile = require('../compile-task/compile-file')
+const compileFile = require('../task/compile-file')
 
 function watchProject () {
   return new Promise((resolve, reject) => {

@@ -1,2 +1,2 @@
 console.clear()
-require('./operation/clean')()
+require('./main/clean')()

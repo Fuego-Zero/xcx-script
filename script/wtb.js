@@ -1,6 +1,6 @@
-const clean = require('./operation/clean')
+const clean = require('./main/clean')
 const conf = require('./wtb.conf')
-const compileProject = require('./operation/compile-project')
+const compileProject = require('./main/compile-project')
 
 // const NODE_ENV = process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 

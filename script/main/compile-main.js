@@ -3,7 +3,7 @@ const map = require('map-stream')
 
 const conf = require('../base.conf')
 const log = require('../log')
-const compileFile = require('../compile-task/compile-file')
+const compileFile = require('../task/compile-file')
 
 function compileMain () {
   return new Promise((resolve, reject) => {

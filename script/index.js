@@ -1,7 +1,7 @@
-const clean = require('./operation/clean')
-const compileMain = require('./operation/compile-main')
-const compileProject = require('./operation/compile-project')
-const watchProject = require('./operation/watch-project')
+const clean = require('./main/clean')
+const compileMain = require('./main/compile-main')
+const compileProject = require('./main/compile-project')
+const watchProject = require('./main/watch-project')
 
 const NODE_ENV = process.env.NODE_ENV = process.env.NODE_ENV || 'dev'
 
