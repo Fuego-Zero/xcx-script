@@ -12,12 +12,16 @@
     "build": "SET NODE_ENV=prod&& node ./script/index",
     "clean": "node ./script/clean",
     "wtb": "node ./script/wtb",
+    "minify.img": "SET MODE=minifyImg&& node ./script/minify-img",
     "script.dev": "nodemon -w ./script ./script/index.js",
     "script.wtd.dev": "nodemon -w ./script ./script/wtd.js",
+    "script.minify.img.dev": "SET MODE=minifyImg&& nodemon -w ./script ./script/minify-img.js",
     "bd.parse1": "wx2swan E:/work/shopXCX-xcx-dev/src E:/work/shopXCX-xcx-bd-dev/parse-src/2019-5-7",
     "bd.parse2": "standard E:/work/shopXCX-xcx-bd-dev/parse-src/new2019-5-7/**/**/*.js --fix"
   },
-  "dependencies": {},
+  "dependencies": {
+    "images": "^3.0.2"
+  },
   "devDependencies": {
     "autoprefixer": "^9.5.1",
     "babel-core": "^6.26.3",

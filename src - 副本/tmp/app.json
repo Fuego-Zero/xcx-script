@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "信息加密",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#000"
+  }
+}

@@ -25,6 +25,7 @@ async function compileFile (file, cb) {
       break
 
     case 'jpg':
+    case 'jpeg':
     case 'png':
     case 'gif':
     case 'ico':

@@ -1,0 +1,17 @@
+@import "b.scss";
+
+a {
+  display: flex;
+  top: 0;
+
+  a {
+    bottom: 0;
+    width: $w;
+  }
+}
+
+@media (min-resolution: 2dppx) {
+  .image {
+      background-image: url(image@2x.png);
+  }
+}
